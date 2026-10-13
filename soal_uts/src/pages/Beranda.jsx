@@ -1,4 +1,4 @@
-function Beranda(){
+export default function Beranda(){
     return (
         <div>
             <h2 style={{ marginTop: 0}}>Halaman Beranda</h2>
@@ -11,4 +11,3 @@ function Beranda(){
         </div>
     );
 }
-export default Beranda;

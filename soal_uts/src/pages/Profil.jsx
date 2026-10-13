@@ -1,4 +1,4 @@
-function Profil(){
+export default function Profil(){
   return(
     <div>
       <h2 style={{ marginTop: 0 }}>Halaman Profil Program Studi</h2>
@@ -8,5 +8,3 @@ function Profil(){
     </div>
   );
 }
-
-export default Profil;

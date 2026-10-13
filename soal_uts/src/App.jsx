@@ -4,13 +4,13 @@ import Header from './components/layout/Header';
 import SideBar from './components/layout/SideBar';
 import Footer from './components/layout/Footer';
 import Beranda from './pages/Beranda';
+import Berita from './pages/Berita';
 import LainLain from './pages/LainLain';
-import Mahasiswa from './pages/Mahasiswa/';
+import Mahasiswa from './pages/Mahasiswa';
 import Pendidikan from './pages/Pendidikan';
 import Profil from './pages/Profil';
 import Riset from './pages/Riset';
-
-// lakukan commit "selesai TODO 2" dan push 
+import NotFound from './pages/NotFound';
 
 function App() {
   return (

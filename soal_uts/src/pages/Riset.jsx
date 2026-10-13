@@ -1,4 +1,4 @@
-function Riset(){
+export default function Riset(){
   return(
     <div>
       <h2 style={{ marginTop: 0 }}>Fokus Riset</h2>
@@ -13,5 +13,4 @@ function Riset(){
       </p>
     </div>
   );
-}
-export default Riset;
+} 
