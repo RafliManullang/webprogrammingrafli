@@ -37,7 +37,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
-
-// TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 
