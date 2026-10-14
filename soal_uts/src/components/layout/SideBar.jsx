@@ -7,7 +7,7 @@ export default function SideBar(){
                 <br />
                 <em>January 1st, 2010</em>
             </div>
-            <div className="new-item">
+            <div className="news-item">
                 2010 sees the redesign of our website. Take a look around and let us know what you think.
                 <br />
                 <a href="#">Read more</a>
