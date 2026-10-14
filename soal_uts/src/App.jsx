@@ -11,7 +11,7 @@ import Pendidikan from './pages/Pendidikan';
 import Profil from './pages/Profil';
 import Riset from './pages/Riset';
 import NotFound from './pages/NotFound';
-import Array from './pages/Array';
+import Array from './components/Array';
 //testpush
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
             <Route path="/riset" element={<Riset />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Array />
         </main>
       <SideBar />
       </div>
