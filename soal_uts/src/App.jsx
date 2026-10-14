@@ -11,6 +11,7 @@ import Pendidikan from './pages/Pendidikan';
 import Profil from './pages/Profil';
 import Riset from './pages/Riset';
 import NotFound from './pages/NotFound';
+import Array from './pages/Array';
 //testpush
 
 function App() {
