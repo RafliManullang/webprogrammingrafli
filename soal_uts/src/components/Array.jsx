@@ -1,4 +1,4 @@
-function Array() {
+export default function Array() {
     const daftarbuah = ["Apel", "Mangga", "Pisang"];
     return (
         <ul>
@@ -6,4 +6,3 @@ function Array() {
         </ul>
     );
 }
-export default Array;
