@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function KartuRingkasan() {
-  const [transaksi, setTransaksi] = useState()
+  <div className=""></div>const [transaksi, setTransaksi] = useState()
 
   const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
