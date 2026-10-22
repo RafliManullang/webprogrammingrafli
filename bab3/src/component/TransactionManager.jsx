@@ -1,11 +1,10 @@
 import {useState} from 'react';
-import {Form, InputGroup, Modal, Button, Table, ProgressBar};
+import {Form, InputGroup, Modal, Button, Table, ProgressBar}from 'react-bootstrap';
 // const s = useState(false)
 function TransactionManager() {
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
-
   return (
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-3">
