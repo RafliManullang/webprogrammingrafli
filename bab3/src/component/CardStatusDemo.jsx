@@ -1,10 +1,11 @@
+import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';
 
-import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from
-'react-bootstrap';
+// Export default function CardStatusDemo()
+// Card.header Card.body Card.title Dropdown.menu
 
 export default function CardStatusDemo() {
   return (
-    <Card className="shadow-sm style={{ width: '24rem' }}">
+    <Card className="shadow-sm" style={{ width: '24rem' }}>
       <Card.Header className="d-flex justify-content-between align-items-center">
         <span>Laporan Dompet</span>
         <Badge bg="success">Aktif</Badge>
