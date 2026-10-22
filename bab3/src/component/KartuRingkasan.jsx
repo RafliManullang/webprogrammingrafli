@@ -5,7 +5,7 @@ export default function KartuRingkasan() {
         borderRadius: '6px',
         marginBottom: '15px'
     };
-    const textStyle = {
+    const textStyle = { 
         fontWeight: 'bold',
         color: '#0d6efd'
     };
