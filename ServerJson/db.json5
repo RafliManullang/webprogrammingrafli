@@ -3,7 +3,7 @@
   comments: [],
   profile: {},
   transaksi: [
-    {id: 1, keterangan: 'Pulsa', kategori: 'Pengeluaran', tipe: 'Pengeluaran', nominal: 25000},
-    {id: 2, keterangan: 'Makan siang', kategori: 'Pengeluaran', tipe: 'Pengeluaran', nominal: 30000}
+    {id:1, keterangan: 'Pulsa', kategori: 'Pengeluaran', tipe: 'Pengeluaran', nominal: 25000},
+    {id:2, keterangan: 'Makan siang', kategori: 'Pengeluaran', tipe: 'Pengeluaran', nominal: 30000}
   ]
 }
