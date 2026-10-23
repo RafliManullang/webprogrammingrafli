@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+//testpr
 export default function KartuRingkasan() {
   const [transaksi, setTransaksi] = useState([]);
 
