@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import React from 'react';
 export default function KartuRingkasan() {
   const [transaksi, setTransaksi] = useState([])
   const ambilData = () => {
@@ -10,7 +10,7 @@ export default function KartuRingkasan() {
         setTransaksi(data);
       })
       .catch((error) => {
-        console.log('Terjadi kesalahan saat mengambil data', error);
+        console.error('Error fetching data:', error);
       });
   };
 
