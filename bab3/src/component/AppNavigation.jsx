@@ -1,5 +1,5 @@
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom'; 
+import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
+import { NavLink } from 'react-router-dom'; 
 
 function AppNavigation(){
   return (
@@ -27,4 +27,4 @@ function AppNavigation(){
   );
 }
 
-export default AppNavigation;
+export default  AppNavigation;
