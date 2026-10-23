@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 
 export default function KartuRingkasan() {
   const [transaksi, setTransaksi] = useState([])
-
   const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
       .then  ((response) => response.json())
