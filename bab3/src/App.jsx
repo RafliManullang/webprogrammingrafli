@@ -28,11 +28,11 @@ function App() {
           {/* Route transaksiItem */}
           <Route path='/transaksi' element={ <TransaksiItem />} />
           {/* Route KartuRingaksan */}
-          <Route path='/kartu' element={ <KartuRingkasan />} />
+          <Route path='/kartu-ringkasan' element={ <KartuRingkasan />} />
           {/* Route Badge */}
           <Route path='/badge' element={ <Badge />} />
           {/* Route WalletSummary */}
-          <Route path='/wallet' element={ <WalletSummary />} />
+          <Route path='/wallet-summary' element={ <WalletSummary />} />
           
           <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
           <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
