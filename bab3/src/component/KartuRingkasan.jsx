@@ -11,11 +11,22 @@ export default function KartuRingkasan() {
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
+  const cardStyle = {
+    padding: '20px',
+    border: '1px solid #dee2e6',
+    borderRadius: '6px',
+    marginBottom: '15px'
+  };
+
+  const textStyle = {
+    fontWeight: 'bold',
+    color: '#0d6efd'
+  };
+
   return (
-    <div className="container mt-4">
-      <h3>Ringkasan Transaksi</h3>
-      <p className="fw-bold text-primary">Total Saldo: Rp 2.500.000</p>
-      <table className="table">
+    <div style={cardStyle}>
+      <p style={textStyle}>Total Saldo: Rp 2.500.000</p>
+      <table>
         <tbody>
           {Array.isArray(transaksi) && transaksi.length > 0 ? (
             transaksi.map((item, index) => (
@@ -27,7 +38,7 @@ export default function KartuRingkasan() {
             ))
           ) : (
             <tr>
-              <td colSpan="3">Belum ada data transaksi (Server Offline).</td>
+              <td colSpan="3">Memuat data...</td>
             </tr>
           )}
         </tbody>
