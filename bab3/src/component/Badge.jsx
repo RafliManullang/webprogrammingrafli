@@ -8,7 +8,8 @@ export default function Badge({ tipe, children }) {
     <div className="container mt-4">
       <h3>Halaman Badge</h3>
       <span className={className}>{children}</span>;
-      <span className="badge bg-primary">Informasi Saldo Aktif</span>
+      
+      <h4>Informasi saldo aktif</h4>
     </div>
   );
 }
