@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
-//testpr
+
 export default function KartuRingkasan() {
-  const [transaksi, setTransaksi] = useState([]);
+  const [transaksi, setTransaksi] = useState([])
 
   const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
-      .then((response) => response.json())
+      .then  ((response) => response.json())
       .then((data) => {
         console.log('Data diterima:', data);
         setTransaksi(data);
       })
       .catch((error) => {
-        console.log('Error:', error);
+        console.log('Terjadi kesalahan saat mengambil data', error);
       });
   };
 

@@ -21,6 +21,9 @@ function App() {
       {/* buat Routes */}
       <AppNavigation />
       <Routes>
+          {/* Tambahkan Route Utama agar halaman tidak putih polos */}
+          <Route path='/' element={ <KartuRingkasan />} />
+
           {/* Tempat untuk komponen  */}
           {/* Route transaksiItem */}
           <Route path='/transaksi' element={ <TransaksiItem />} />
