@@ -3,13 +3,5 @@ import React from 'react';
 
 export default function Badge({ tipe, children }) {
   const className = tipe === 'Pemasukan' ? 'badge-pemasukan' : 'badge-pengeluaran';
-  return (
-    
-    <div className="container mt-4">
-      <h3>Halaman Badge</h3>
-      <span className={className}>{children}</span>;
-      
-      <h4>Informasi saldo aktif</h4>
-    </div>
-  );
+  return <span className={className}>{children}</span>;
 }
