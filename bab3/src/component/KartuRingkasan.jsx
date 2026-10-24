@@ -1,7 +1,7 @@
 {/* import { useState, useEffect } from 'react';
 import React from 'react'; */}
 export default function KartuRingkasan() {
-  const[transaksi,setTransaksi]=useState([]);
+  //const [transaksi, setTransaksi] = useState([])
 
   {/* const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
@@ -34,7 +34,7 @@ export default function KartuRingkasan() {
   return (
     <div style={cardStyle}>
       <p style={textStyle}>Total Saldo: Rp 2.500.000</p>
-      <table>
+      {/*<table>
         <tbody>
           {transaksi.map((item, index) => (
             <tr key={item.id || index}>
@@ -45,7 +45,7 @@ export default function KartuRingkasan() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table>*/}
     </div>
   );
 }
