@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 {*/ import {useState} from 'react'; */}
 import {Form, InputGroup, Modal, Button, Table, ProgressBar}from 'react-bootstrap';
 import { data } from 'react-router-dom';
@@ -13,7 +13,7 @@ function TransactionManager() {
     fetch('http://localhost:3000/transaksi')
     .then ((response) => response.json())
     .then((data) => {
-      console.log('data diterima:', data)
+      console.log('Data diterima:', data)
       setTransaksi(data)
     })
     .catch((error) => {
@@ -22,8 +22,7 @@ function TransactionManager() {
 
   };
 
-  useEffect(
-    () => {
+  useEffect(() => {
       ambilData();
     }, []
   )
