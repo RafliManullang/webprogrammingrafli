@@ -61,12 +61,6 @@ function TransactionManager() {
             )
           }
 
-          {/*<tr>
-            <td>1</td>
-            <td>Belanja Bulanan</td>
-            <td>Pengeluaran</td>
-            <td>Rp 750.000</td>
-          </tr>*/}
         </tbody>
       </Table>
 
