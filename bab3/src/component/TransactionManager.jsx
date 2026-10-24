@@ -5,7 +5,7 @@ import { data } from 'react-router-dom';
 // const s = useState(false)
 function TransactionManager() {
   const [show, setShow] = useState(false);
-  {/* const [transaksi, setTransaksi] = useState([]); */}
+  /* const [transaksi, setTransaksi] = useState([]); */
   const [transaksi, setTransaksi] = useState([]);
 
   const handleClose = () => setShow(false);
