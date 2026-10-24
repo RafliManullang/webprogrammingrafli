@@ -1,12 +1,31 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import {Form, InputGroup, Modal, Button, Table, ProgressBar}from 'react-bootstrap';
+import { data } from 'react-router-dom';
 // const s = useState(false)
 function TransactionManager() {
   const [show, setShow] = useState(false)
   const [transaksi, setTransaksi] = useState([])
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
+  
+  const ambilData = () => {
+    fetch('http://localhost:3000/transaksi')
+    .then ((response) => response.json())
+    .then((data) => {
+      console.log('data diterima:', data)
+      setTransaksi(data)
+    })
+    .catch((error) => {
+      console.error('ada kesalahan mengambil data', error );
+    });
 
+  };
+
+  useEffect(
+    () => {
+      ambilData();
+    }, []
+  )
   return (
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-3">
@@ -28,12 +47,24 @@ function TransactionManager() {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          {
+          transaksi.map((item, index) => (
+            <tr key={item.id || index}>
+              <td>{index + 1}</td>
+              <td>{item.keterangan}</td>
+              <td>{item.kategori}</td>
+              <td>{item.nominal}</td>
+            </tr>
+             )
+            )
+          }
+
+          {/*<tr>
             <td>1</td>
             <td>Belanja Bulanan</td>
             <td>Pengeluaran</td>
             <td>Rp 750.000</td>
-          </tr>
+          </tr>*/}
         </tbody>
       </Table>
 

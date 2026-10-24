@@ -1,5 +1,6 @@
 import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 function AppNavigation(){
   return (
@@ -11,6 +12,7 @@ function AppNavigation(){
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/transaksi">Transaksi</Nav.Link>
+            <Nav.Link as={Link} to="/laporan">Laporan</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/badge">Badge</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/cardstatusdemo">CardStatusDemo</NavDropdown.Item>
