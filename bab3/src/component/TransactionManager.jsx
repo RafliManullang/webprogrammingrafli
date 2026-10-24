@@ -4,10 +4,10 @@ import {Form, InputGroup, Modal, Button, Table, ProgressBar}from 'react-bootstra
 import { data } from 'react-router-dom';
 // const s = useState(false)
 function TransactionManager() {
-  const [show, setShow] = useState(false)
-  const [transaksi, setTransaksi] = useState([])
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+  const [show, setShow] = useState(false);
+  const [transaksi, setTransaksi] = useState([]);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   
   const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
