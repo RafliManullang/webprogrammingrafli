@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-{/* import {useState} from 'react'; */}
+{/* 
+import {useState} from 'react'; 
+*/}
 import {Form, InputGroup, Modal, Button, Table, ProgressBar}from 'react-bootstrap';
-import { data } from 'react-router-dom';
+
 // const s = useState(false)
 function TransactionManager() {
-  const [show, setShow] = useState(false);
-  /* const [transaksi, setTransaksi] = useState([]) */
+  const [show, setShow] = useState(false)
   const [transaksi, setTransaksi] = useState([])
 
   const handleClose = () => setShow(false);
@@ -28,6 +29,7 @@ function TransactionManager() {
       ambilData();
     }, []
   )
+  
   return (
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-3">
