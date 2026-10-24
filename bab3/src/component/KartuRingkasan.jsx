@@ -1,5 +1,5 @@
 export default function KartuRingkasan() {
-
+  const [transaksi, setTransaksi] = useState([])
   const cardStyle = {
     padding: '20px',
     border: '1px solid #dee2e6',
@@ -15,7 +15,18 @@ export default function KartuRingkasan() {
   return (
     <div style={cardStyle}>
       <p style={textStyle}>Total Saldo: Rp 2.500.000</p>
-
+      <table>
+        <tbody>
+          {transaksi.map((item, index) => (
+            <tr key={item.id || index}>
+              <td>{index + 1}</td>
+              <td>{item.keterangan}</td>
+              <td>{item.kategori}</td>
+              <td>{item.nominal}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
