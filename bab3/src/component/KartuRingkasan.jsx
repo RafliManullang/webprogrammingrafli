@@ -3,7 +3,7 @@ import React from 'react'; */}
 export default function KartuRingkasan() {
 {/* const [transaksi, setTransaksi] = useState([]) */}
 
-  const ambilData = () => {
+  {/* const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
       .then ((response) => response.json())
       .then((data) => {
@@ -17,7 +17,7 @@ export default function KartuRingkasan() {
 
   useEffect(() => {
     ambilData();
-  }, []);
+  }, []); */}
 
   const cardStyle = {
     padding: '20px',
