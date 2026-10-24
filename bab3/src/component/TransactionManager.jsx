@@ -39,6 +39,7 @@ function TransactionManager() {
     }
   };
   useEffect(() => {
+    ambilData();
     ambilDataAsync();
   }, []);
 
