@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 {/* 
 // 
 import {useState} from 'react'; 
@@ -25,7 +26,7 @@ function TransactionManager() {
     });
 
   }; */
-  const ambilDataAsync = async () =>{   
+/*  const ambilDataAsync = async () =>{   
     try {
       const response = await fetch('http://localhost:3000/transaksi');
       if (!response.ok) {
@@ -37,10 +38,20 @@ function TransactionManager() {
     } catch (error) {
       console.error('Error:', error.message);
     }
+  }; */
+    const ambilDataAxios = async () => {
+    try {
+      const response = await axios.get('http://localhost:3000/transaksi');
+      setTransaksi(response.data);
+    } catch (error) {
+      console.error('Terjadi kesalahan jaringan:', error.message);
+    }
   };
+
   useEffect(() => {
     /*ambilData(); */
-    ambilDataAsync();
+   /* ambilDataAsync(); */
+    ambilDataAxios();
   }, []);
 
   
