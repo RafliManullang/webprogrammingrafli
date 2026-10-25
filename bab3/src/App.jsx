@@ -14,6 +14,8 @@ import HeaderBanner from './component/HeaderBanner';
 import CardStatusDemo from './component/CardStatusDemo';
 import AppNavigation from './component/AppNavigation';
 import TransactionManager from './component/TransactionManager';
+import PostListFetch from './component/PostListFetch';
+import PostListAxios from './component/PostListAxios';
 
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
           <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
           <Route path='/AppNavigation' element={ <AppNavigation/> } />
           <Route path='/TransactionManager' element={ <TransactionManager/> } />
+          <Route path='/PostListFetch' element={ <PostListFetch/> } />
+          <Route path='/PostListAxios' element={ <PostListAxios/> } />
         </Routes>
     </>
   );
