@@ -515,7 +515,7 @@ jobs:
             local file=$1
             local teks_wajib=$2
             # grep akan mencari teks di dalam file. Jika tidak ketemu, maka ERROR
-            if ! grep -q "$teks_wajib" "$file"; then
+            if ! grep -Fq "$teks_wajib" "$file"; then
               echo "❌ PELANGGARAN di $file: Belum ada berkas ini '$teks_wajib'"
               ERROR=1
             fi
@@ -523,7 +523,7 @@ jobs:
 
           # FILE 
           FILEA="../ServerJson/db.json5"
-          FILEB="src/component/KartuRingkasan.jsx"
+          FILEB="src/component/TransactionManager.jsx"
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
           cek_teks "$FILEA" "posts"
@@ -536,7 +536,6 @@ jobs:
           cek_teks "$FILEA" "kategori"
           cek_teks "$FILEA" "nominal"
 
-          cek_teks "$FILEB" "nominal"
           cek_teks "$FILEB" "import { useState, useEffect } from 'react'"
           cek_teks "$FILEB" "const [transaksi, setTransaksi] = useState([])"
           cek_teks "$FILEB" "const ambilData = () => {"
@@ -583,7 +582,7 @@ jobs:
             fi
            }
           # FILE 
-          FILEB="src/component/KartuRingkasan.jsx"
+          FILEB="src/component/TransactionManager.jsx"
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
 
@@ -599,7 +598,8 @@ jobs:
           cek_teks "$FILEB" "console.log ('Data diterima:', data)"
           cek_teks "$FILEB" "setTransaksi(data)"
           cek_teks "$FILEB" "console.error('Error:', error.message)"
-          cek_teks "$FILEB" " ambilDataAsync();"
+          cek_teks "$FILEB" "ambilDataAsync();"
+          cek_teks "$FILEB" "<AppNavigation />"
           # Cara menggunakannya 
           if [ $ERROR -eq 1 ]; then
             echo ""
