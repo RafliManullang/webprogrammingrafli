@@ -13,7 +13,7 @@ function TransactionManager() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   
-  const ambilData = () => {
+  /*const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
     .then ((response) => response.json())
     .then((data) => {
@@ -24,7 +24,7 @@ function TransactionManager() {
       console.error('ada kesalahan mengambil data', error );
     });
 
-  };
+  }; */
   const ambilDataAsync = async () =>{   
     try {
       const response = await fetch('http://localhost:3000/transaksi');
@@ -39,14 +39,15 @@ function TransactionManager() {
     }
   };
   useEffect(() => {
-    ambilData();
+    /*ambilData(); */
     ambilDataAsync();
   }, []);
 
   
   return (
     <div className="container mt-4">
-      <div className="d-flex justify-content-between align-items-center mb-3">
+    {/* <AppNavigation /> */}
+    <div className="d-flex justify-content-between align-items-center mb-3">
         <h3>Penggunaan Anggaran</h3>
         <Button variant="success" onClick={handleShow}>
           + Tambah Transaksi
